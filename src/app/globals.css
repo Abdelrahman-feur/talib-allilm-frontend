@@ -115,3 +115,15 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   @apply bg-secondary; /* Hover state for the thumb */
 }
+
+.custom-scrollbar-body::-webkit-scrollbar-track {
+  @apply m-5 rounded-full; /* Style the track */
+}
+
+.custom-scrollbar-body::-webkit-scrollbar-thumb {
+  @apply bg-primary h-14 rounded-full; /* Style the thumb */
+}
+
+.custom-scrollbar-body::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary; /* Hover state for the thumb */
+}

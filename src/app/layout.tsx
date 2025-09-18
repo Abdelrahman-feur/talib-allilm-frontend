@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className} custom-scrollbar-body `}>
         <Suspense fallback={null}>
           <NProgressProvider />
         </Suspense>

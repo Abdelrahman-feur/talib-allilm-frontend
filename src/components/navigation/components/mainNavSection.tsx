@@ -13,7 +13,7 @@ const MainNavSection: React.FC<props> = ({ setShowSideBar }) => {
       <section className=" gap-3 flex justify-between  items-center h-[48px] ">
         <Image
           className="cursor-pointer 2xl:w-[167px] 2xl:h-[94px] xl:w-[85px] xl:h-[48px] "
-          src={"logo.svg"}
+          src={"/logo.svg"}
           alt="website-logo"
           width={"85"}
           height={"48"}

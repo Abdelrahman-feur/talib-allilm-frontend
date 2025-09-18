@@ -26,7 +26,7 @@ const SideNavSection: React.FC<props> = ({ setShowSideBar, showSideBar }) => {
     >
       <section
         onClick={(e) => e.stopPropagation()}
-        className={` p-[48px] min-h-full max-h-screen custom-scrollbar  overflow-y-scroll w-[314px] md:w-[361px]  bg-white z-50 
+        className={` p-[48px] h-screen custom-scrollbar  overflow-y-scroll w-[314px] md:w-[361px]  bg-white z-50 
         rounded-r-4xl  ${
           showSideBar ? animations["side-bar"] : animations["hide-bar"]
         }`}
