@@ -1,0 +1,29 @@
+.side-bar {
+  animation: movesFromRight 0.5s ease-out;
+}
+.hide-bar {
+  animation: movesToLeft 0.5s ease-in forwards;
+}
+
+@keyframes movesFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+    z-index: 50;
+  }
+}
+
+@keyframes movesToLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-30rem);
+  }
+}

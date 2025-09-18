@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+@layer base {
+  * {
+    @apply font-sans;
+    font-family: "Poppins", system-ui, sans-serif !important;
+  }
+  h1 {
+    @apply 2xl:text-[56px] lg:text-[48px] md:text-2xl font-semibold;
+    color: var(--color-heading-color);
+  }
+  label {
+    @apply text-[14px] 2xl:text-[24px];
+  }
+}
+body {
+  font-family: "poppins";
+}
+
+@theme {
+  --color-primary: #3a482f;
+  --color-secondary: #c69545;
+  --color-error: #cd0000;
+  --color-warning: #ff9800;
+  --color-input-background: #f5f5f5;
+  --color-heading-color: #141219;
+  --color-text-color: #626162;
+  --color-lightGray: #f8f8f8;
+  --color-heading: #141219;
+  --color-gray: #949494;
+
+  --breakpoint-2xl: 156rem;
+}
+@layer components {
+}
+
+.container {
+  @apply px-[16px] md:px-[48px] xl:px-[120px] 2xl:px-[240px] max-w-screen-2xl 2xl:mx-auto;
+}
+
+.btn-primary {
+  @apply bg-primary text-white hover:text-primary hover:border hover:border-primary hover:bg-white;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white hover:text-secondary hover:border hover:border-secondary hover:bg-white;
+}
+
+.btn-outline {
+  @apply bg-transparent text-secondary border border-secondary hover:bg-secondary hover:text-white;
+}
+.lg-btn {
+  @apply h-[clamp(48px,4.7vh,88px)] w-[clamp(242px,26.7vw,672px)] md:w-[clamp(320px,26.7vw,672px)];
+}
+.md-btn {
+  @apply h-[clamp(44px,4.7vh,72px)] w-[clamp(164px,12.6vw,236px)];
+}
+.sm-btn {
+  @apply h-[clamp(34px,4.7vh,60px)] w-[clamp(100px,8.2vw,144px)];
+}
+
+.sub-title {
+  @apply text-[14px] xl:text-[18px] 2xl:text-[32px] mt-4 text-text-color;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #0070f3;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  @apply w-2; /* Set scrollbar width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-primary m-5 rounded-full; /* Style the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-secondary h-14 rounded-full; /* Style the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-secondary; /* Hover state for the thumb */
+}
