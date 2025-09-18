@@ -14,9 +14,7 @@ const SideNavSection: React.FC<props> = ({ setShowSideBar, showSideBar }) => {
       onClick={() => {
         setShowSideBar(false);
       }}
-      className={`lg:hidden bg-[#00000066] w-full fixed
-           min-h-full  top-0 left-0 z-40
-          transition-opacity duration-300
+      className={`lg:hidden bg-[#00000066] w-full fixed min-h-full  top-0 left-0 z-40 transition-opacity duration-300
       ${
         showSideBar
           ? "opacity-100 pointer-events-auto"
