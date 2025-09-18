@@ -105,11 +105,11 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-primary m-5 rounded-full; /* Style the track */
+  @apply m-12 rounded-full; /* Style the track */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-secondary h-14 rounded-full; /* Style the thumb */
+  @apply bg-primary h-14 rounded-full; /* Style the thumb */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
